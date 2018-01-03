@@ -1,0 +1,65 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: 0;
+  transition: all 350ms ease;
+  visibility: hidden;
+  transform: translateX(-100%);
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 350ms ease;
+  transform: translateX(0%)
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 350px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid 1px #fff;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.body p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  margin: 2px 0 24px;
+  text-align: justify;
+}
